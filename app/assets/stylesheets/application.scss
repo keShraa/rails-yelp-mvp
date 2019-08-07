@@ -12,10 +12,25 @@
 @import "components/index";
 @import "pages/index";
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 h1 {
+  font-family: 'Roboto Slab', serif;
   font-size: 64px;
 }
 
 .container {
   width: 800px;
+}
+
+a {
+  color: #505050;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #202020;
+  font-weight: bolder;
 }

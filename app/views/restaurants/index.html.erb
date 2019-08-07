@@ -1,7 +1,4 @@
-<div class="d-flex justify-content-between align-items-center">
-  <h1>Restaurants</h1>
-  <%= link_to "Add a new restaurant", new_restaurant_path, class:'btn btn-primary' %>
-</div>
+<h1>Restaurants</h1>
 
 <ul class="list-inline">
   <% @restaurants.each do |restaurant| %>
@@ -13,8 +10,8 @@
       <%= restaurant.address %>
       <hr>
       <div class="d-flex justify-content-end">
-        <%= link_to "Details", restaurant_path(restaurant) %> |
-        <%= link_to "Edit", edit_restaurant_path(restaurant) %> |
+        <%= link_to "Details", restaurant_path(restaurant) %><i class="fas fa-utensils"></i>
+        <%= link_to "Edit", edit_restaurant_path(restaurant) %><i class="fas fa-utensils"></i>
         <%= link_to "Delete", restaurant_path(restaurant),
               method: :delete, data: { confirm: "Are you sure?" } %>
       </div>
