@@ -10,6 +10,8 @@
     <% @restaurant.reviews.each do |review| %>
       <li><% review.rating.times do %>
         <i class="fas fa-star"></i>
+      <% end %>
+      <% (5 - review.rating).times do %>
         <i class="far fa-star"></i>
       <% end %></li>
       <li><%= review.content %></li>
