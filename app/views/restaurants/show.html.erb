@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1><%= @restaurant.name %></h1>
+  <p>
+    <small>(<%= @restaurant.category %>)</small>
+    <br><br>
+    <%= @restaurant.address %>
+  </p>
+  <hr>
+  <ul class="list-unstyled">
+    <% @restaurant.reviews.each do |review| %>
+      <li><% review.rating.times do %>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      <% end %></li>
+      <li><%= review.content %></li>
+      <br>
+    <% end %>
+  </ul>
+  <hr>
+  <div class="d-flex justify-content-end">
+    <%= link_to "Review", new_restaurant_review_path(@restaurant) %> |
+    <%= link_to "Edit", edit_restaurant_path(@restaurant) %> |
+    <%= link_to 'Back', restaurants_path %>
+  </div>
+</div>

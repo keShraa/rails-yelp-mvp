@@ -14,27 +14,27 @@ restaurants_attributes = [
   {
     name:         'Dishoom',
     address:      '7 Boundary St, London E2 7JE',
-    category:     'chinese',
+    category:     'chinese'
   },
   {
     name:         'Pizza East',
     address:      '56A Shoreditch High St, London E1 6PQ',
-    category:     'italian',
+    category:     'italian'
   },
   {
     name:         'Pitaya',
     address:      '107 Cours Balguerie Stuttenberg 33300 Bordeaux',
-    category:     'japanese',
+    category:     'japanese'
   },
   {
     name:         'L\'Air de Famille',
     address:      '15 Rue Albert Pitres, 33000 Bordeaux',
-    category:     'french',
+    category:     'french'
   },
   {
     name:         'Tables Vatel Bordeaux',
     address:      '114-115 Quai des Chartrons, 33300 Bordeaux',
-    category:     'belgian',
+    category:     'belgian'
   }
 ]
 Restaurant.create!(restaurants_attributes)
