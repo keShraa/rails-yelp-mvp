@@ -10,10 +10,10 @@
       <%= restaurant.address %>
       <hr>
       <div class="d-flex justify-content-end">
-        <%= link_to "Details", restaurant_path(restaurant) %><i class="fas fa-utensils"></i>
-        <%= link_to "Edit", edit_restaurant_path(restaurant) %><i class="fas fa-utensils"></i>
+        <%= link_to "Details", restaurant_path(restaurant), style:'margin: 0 8px' %><i class="fas fa-utensils"></i>
+        <%= link_to "Edit", edit_restaurant_path(restaurant), style:'margin: 0 8px' %><i class="fas fa-utensils"></i>
         <%= link_to "Delete", restaurant_path(restaurant),
-              method: :delete, data: { confirm: "Are you sure?" } %>
+              method: :delete, data: { confirm: "Are you sure?" }, style:'margin: 0 8px' %>
       </div>
     </li>
   <% end %>
